@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 import tempfile
 import threading
@@ -29,7 +29,7 @@ class ServisTest(unittest.TestCase):
 
     def test_kayit_ve_denetim(self):
         metin = """
-        # Ergin Android Lab
+        # Ergin İz
         tampon_kb: 64
         sure_ms: 700
         kaynak: dilim
@@ -58,9 +58,9 @@ class ServisTest(unittest.TestCase):
             durum = denetim_sor(servis.kanal.port, "DURUM")
             self.assertIn("Ergin Lab", durum)
             self.assertIn("Ergin Kaplan", durum)
-            self.assertIn("Ergin Android Atölyesi", durum)
+            self.assertIn("Ergin İz Atölyesi", durum)
             yazar = denetim_sor(servis.kanal.port, "YAZAR")
-            self.assertIn("Ergin Android Lab", yazar)
+            self.assertIn("Ergin İz", yazar)
             bilinmeyen = denetim_sor(servis.kanal.port, "SIL")
             self.assertIn("HATA", bilinmeyen)
             iplik.join(timeout=5)
@@ -75,7 +75,7 @@ class ServisTest(unittest.TestCase):
                 marka = iz.db.execute(
                     "SELECT deger FROM ustbilgi WHERE anahtar = 'marka'"
                 ).fetchone()[0]
-                self.assertEqual(marka, "Ergin Android Lab")
+                self.assertEqual(marka, "Ergin İz")
             finally:
                 iz.kapat()
 
