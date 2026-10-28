@@ -1,7 +1,7 @@
 # Kullanım
 
-Ergin İz — Ergin Android Lab
-Ergin Kaplan · Ergin Android Atölyesi · Ergin Lab
+Ergin İz — Ergin İz
+Ergin Kaplan · Ergin İz Atölyesi · Ergin Lab
 
 Python 3.10 yeterlidir. Ek paket kurulmaz.
 
