@@ -1,7 +1,7 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
-"""Ergin İz paketi. Ergin Android Lab."""
+"""Ergin İz paketi. Ergin İz."""
 
 from ergin_iz.bayrak import ATOLYE, LAB, MARKA, SURUM, URUN, YAZAR
 
