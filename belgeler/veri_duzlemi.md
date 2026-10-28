@@ -1,6 +1,6 @@
 # Veri düzlemi
 
-Ergin Android Lab · Ergin Kaplan · Ergin Android Atölyesi · Ergin Lab
+Ergin İz · Ergin Kaplan · Ergin İz Atölyesi · Ergin Lab
 
 ## Dosya başlığı (48 bayt, little-endian)
 
