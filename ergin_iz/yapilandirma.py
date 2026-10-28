@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab iz yapılandırması. Kaynak listesi ve tampon boyu burada durur."""
 
@@ -12,7 +12,7 @@ GECERLI_KAYNAK = ("dilim", "sayac", "zamanlayici", "isaret")
 
 
 class YapilandirmaHatasi(ValueError):
-    """Ergin Android Atölyesi yapılandırma hatası."""
+    """Ergin İz Atölyesi yapılandırma hatası."""
 
 
 def yukle(yol: str | Path) -> dict:
