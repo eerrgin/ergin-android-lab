@@ -1,6 +1,6 @@
 #!/bin/sh
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 set -eu
 kok=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
 cd "$kok"
