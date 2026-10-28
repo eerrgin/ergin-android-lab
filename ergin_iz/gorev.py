@@ -1,10 +1,10 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab görev koşucusu.
 
 Çoklu üretici tek tüketici. Üretici iş parçalarını kuyruğa bırakır.
-Tek tüketici işi sırayla çalıştırır. Ergin Android Atölyesi içinde
+Tek tüketici işi sırayla çalıştırır. Ergin İz Atölyesi içinde
 dilim ölçümü bu koşucu üzerinden halkaya yazılır.
 """
 
