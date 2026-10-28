@@ -16,7 +16,7 @@ Bu bir geliştirme önerisidir, mevcut özellik listesi değildir.
 - [ ] hiçbir dosyayı kendiliğinden sunucuya göndermeme
 - [ ] hatalı dosyalarda kontrollü hata mesajı
 
-## Aşama 3 — gerçek Android uygulaması ayrı çalışma
+## Aşama 3 — gerçek Android™ uygulaması ayrı çalışma
 - [ ] ayrı Kotlin/Gradle uygulama iskeleti oluştur
 - [ ] başlangıçta ağ izni ve arka plan servisi ekleme
 - [ ] SAF ile kullanıcı tarafından seçilen kayıt dosyasını içeri al
