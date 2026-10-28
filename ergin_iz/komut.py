@@ -1,7 +1,7 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
-"""Ergin İz komut satırı. Ergin Android Lab."""
+"""Ergin İz komut satırı. Ergin İz."""
 
 from __future__ import annotations
 
@@ -53,8 +53,8 @@ def _kaydet(args) -> int:
     print(f"paket={servis.paket} dusen={servis.dusen}")
     for hata in servis.hatalar:
         print(f"uyari: {hata}", file=sys.stderr)
-    print("Ergin Android Lab kaydı tamam.")
-    print("Ergin Kaplan · Ergin Lab · Ergin Android Atölyesi")
+    print("Ergin İz kaydı tamam.")
+    print("Ergin Kaplan · Ergin Lab · Ergin İz Atölyesi")
     return 0
 
 
@@ -101,8 +101,8 @@ def _cozumle(args) -> int:
     baslik, olaylar = dosyayi_oku(args.iz)
     print(BANNER)
     print(f"yazar={YAZAR}")
-    print("marka=Ergin Android Lab")
-    print("atolye=Ergin Android Atölyesi")
+    print("marka=Ergin İz")
+    print("atolye=Ergin İz Atölyesi")
     print("lab=Ergin Lab")
     for anahtar in ("surum", "uretici", "tampon", "paket", "dusen", "olusturma"):
         print(f"{anahtar}={baslik[anahtar]}")
@@ -142,7 +142,7 @@ def main(argv: list[str] | None = None) -> int:
     grup.add_argument("-s", "--sorgu-dosyasi")
     sorgula.set_defaults(fn=_sorgula)
 
-    rapor = alt.add_parser("rapor", help="Ergin Android Lab metin raporu")
+    rapor = alt.add_parser("rapor", help="Ergin İz metin raporu")
     rapor.add_argument("-i", "--iz", required=True)
     rapor.set_defaults(fn=_rapor)
 
