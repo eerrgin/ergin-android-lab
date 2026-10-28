@@ -2,14 +2,13 @@
 
 © 2026 Ergin Kaplan
 
-Bu depodaki kaynaklar, belgeler ve örnekler Ergin Kaplan'a aittir.
-Ergin Android Lab, Ergin Android Atölyesi ve Ergin Lab adları bu çalışmada Ergin Kaplan tarafından kullanılır.
+Bu depodaki özgün kaynak kodu, belgeler, örnekler ve tasarım Ergin Kaplan tarafından Ergin İz atölyesi için hazırlanmıştır.
 
-- İzinsiz kopyalama yasaktır.
-- Başka bir adla yeniden yayınlamak yasaktır.
-- Ticari dağıtım için Ergin Kaplan'dan yazılı izin gerekir.
-- Dosya başlığındaki Ergin Kaplan, Ergin Android Lab, Ergin Android Atölyesi ve Ergin Lab satırları silinemez.
+- İzinsiz kopyalama ve yeniden yayımlama için bu bildirimde açık bir izin verilmemiştir.
+- Ticari dağıtım için Ergin Kaplan'dan yazılı izin alınmalıdır.
+- Kaynak dosyalarındaki Ergin Kaplan, Ergin İz, Ergin İz Atölyesi ve Ergin Lab atıfları korunmalıdır.
+- Bu bildirim, üçüncü taraf bileşenlerin kendi lisanslarını ortadan kaldırmaz. Yeni bir bağımlılık eklenirse lisansı ayrıca kaydedilmelidir.
 
-Bu depo üçüncü taraf izleme projelerinin kaynak ağacını içermez.
-Kod, Ergin Android Atölyesi için baştan yazılmıştır.
-Açık bir kullanım izni verilmemiştir. Tüm hakları saklıdır.
+Bu depo, Google LLC, Open Handset Alliance veya Android ekibi tarafından yayımlanmamış ve desteklenmeyen bağımsız bir çalışmadır. Android™ Google LLC'nin ticari markasıdır. Ad yalnızca platform bağlamını açıklamak için kullanılır; bu projede resmî bağlantı veya onay iddiası yoktur.
+
+Tüm hakları saklıdır.
