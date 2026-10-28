@@ -1,19 +1,16 @@
-# Servis sınırı
+# Servis sınırı ve güvenlik modeli
 
-Ergin Android Lab · Ergin Kaplan · Ergin Lab · Ergin Android Atölyesi
+Ergin İz — yerel sistem izleme prototipi
 
-Denetim kanalı yalnızca `127.0.0.1` üzerinde, işletim sisteminin seçtiği
-bir kapıda dinler. Dış arayüze bağlanmaz.
+## Teknik kapsam
+Bu depo mevcut hâliyle Android cihaz uygulaması değildir. Python/C katmanları yerel bir ana makinede çalışan eğitim prototipidir. Android SDK, Android arka plan servisi veya Google SDK entegrasyonu bulunduğu varsayılmamalıdır.
 
-Çerçeve boyu en fazla 4096 bayttır. Daha büyüğü `HATA cerceve` ile kapanır.
-Bilinen komutlar: `DURUM`, `KAYNAKLAR`, `YAZAR`, `DUR`.
-Bunun dışı `HATA bilinmeyen` döner.
+## Denetim kanalı
+Denetim kanalı yalnızca `127.0.0.1` üzerinde, işletim sisteminin seçtiği bir kapıda dinler. Dış arayüze bağlanmaz. Çerçeve boyu en fazla 4096 bayttır. Bilinen komutlar: `DURUM`, `KAYNAKLAR`, `YAZAR`, `DUR`; diğer komutlar reddedilir.
 
-Komut metni kabuğa verilmez. Dosya yolu, ortam değişkeni veya başka bir
-program çağrısı üretilmez.
+Komut metni kabuğa verilmez. Dosya yolu, ortam değişkeni veya başka bir program çağrısı komut metninden üretilmez. İz dosyası yalnızca kaydı başlatan kullanıcının yazdığı yere konur. SQL tüketici tarafında eldeki dosya üzerinde çalışır; sorguyu ağa açmaz.
 
-İz dosyası yalnızca kaydı başlatan kullanıcının yazdığı yere konur.
-SQL tüketici tarafında, eldeki dosyanın üzerinde çalışır. Sorguyu ağa açmaz.
+Halka dolunca eski olay sessizce ezilmez. Sığmayan paket düşer ve `dusen` sayılır.
 
-Halka dolunca eski olay ezilmez. Sığmayan paket düşer ve `dusen` sayılır.
-Bu, sessiz veri kaybını başlıkta görünür kılar.
+## Güvenlik notları
+Bu belge tasarımın hedefini açıklar; güvenlik garantisi veya bağımsız denetim raporu değildir. Kod değiştiğinde yerel sınırlar, hata yolları ve testler yeniden kontrol edilmelidir.
