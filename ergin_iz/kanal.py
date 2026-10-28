@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab denetim kanalı.
 
@@ -17,7 +17,7 @@ AZAMI = 4096
 
 
 class KanalHatasi(RuntimeError):
-    """Ergin Android Lab denetim hatası."""
+    """Ergin İz denetim hatası."""
 
 
 def tam_oku(sock: socket.socket, boy: int) -> bytes | None:
@@ -130,9 +130,9 @@ class DenetimKanali:
             kaynak = ",".join(self.servis.ayar["kaynaklar"])
             return (
                 "ERGIN_LAB TAMAM\n"
-                "atolye=Ergin Android Atölyesi\n"
+                "atolye=Ergin İz Atölyesi\n"
                 "lab=Ergin Lab\n"
-                "marka=Ergin Android Lab\n"
+                "marka=Ergin İz\n"
                 "yazar=Ergin Kaplan\n"
                 f"paket={self.servis.paket}\n"
                 f"kaynak={kaynak}\n"
@@ -143,8 +143,8 @@ class DenetimKanali:
         if soz == "YAZAR":
             return (
                 "Ergin Kaplan\n"
-                "Ergin Android Lab\n"
-                "Ergin Android Atölyesi\n"
+                "Ergin İz\n"
+                "Ergin İz Atölyesi\n"
                 "Ergin Lab\n"
             )
         if soz == "DUR":
