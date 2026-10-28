@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab servisi. Yapılandırmayı uygular, halkaları ve süreyi yönetir."""
 
@@ -32,7 +32,7 @@ def kuvvet_iki(bayt: int) -> int:
 
 
 class Servis:
-    """Ergin Android Atölyesi koordinasyon katmanı. Ergin Kaplan."""
+    """Ergin İz Atölyesi koordinasyon katmanı. Ergin Kaplan."""
 
     def __init__(self, ayar: dict):
         bilinmeyen = [ad for ad in ayar["kaynaklar"] if ad not in TABLO]
@@ -75,8 +75,8 @@ class Servis:
             iplikler.append(iplik)
 
         print(f"denetim_port={self.kanal.port}", flush=True)
-        print("Ergin Android Lab servisi dinliyor.", flush=True)
-        print("Ergin Kaplan · Ergin Lab · Ergin Android Atölyesi", flush=True)
+        print("Ergin İz servisi dinliyor.", flush=True)
+        print("Ergin Kaplan · Ergin Lab · Ergin İz Atölyesi", flush=True)
 
         sure = int(self.ayar["sure_ms"]) / 1000.0
         bas = time.monotonic()
