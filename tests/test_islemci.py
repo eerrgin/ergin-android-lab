@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 import tempfile
 import unittest
@@ -20,15 +20,15 @@ class IslemciTest(unittest.TestCase):
     def test_dilim_ve_sorgu(self):
         dis = dilim_bas("ergin.lab.cerceve", "Ergin Lab", 1)
         dis.ts = 1_000
-        ic = dilim_bas("ergin.lab.olcum", "Ergin Android Lab", 2)
+        ic = dilim_bas("ergin.lab.olcum", "Ergin İz", 2)
         ic.ts = 1_500
-        ic_bit = dilim_bit("ergin.lab.olcum", "Ergin Android Lab", 2)
+        ic_bit = dilim_bit("ergin.lab.olcum", "Ergin İz", 2)
         ic_bit.ts = 4_000
         dis_bit = dilim_bit("ergin.lab.cerceve", "Ergin Lab", 1)
         dis_bit.ts = 5_000
-        nabiz = isaret("ergin.lab.kalp", "Ergin Android Atölyesi")
+        nabiz = isaret("ergin.lab.kalp", "Ergin İz Atölyesi")
         nabiz.ts = 2_000
-        olcu = sayac("bellek.musait_kb", "Ergin Android Atölyesi", 4096)
+        olcu = sayac("bellek.musait_kb", "Ergin İz Atölyesi", 4096)
         olcu.ts = 2_100
         govde = b"".join(paket_yap(o) for o in (dis, ic, nabiz, olcu, ic_bit, dis_bit))
         with tempfile.TemporaryDirectory() as tmp:
@@ -43,7 +43,7 @@ class IslemciTest(unittest.TestCase):
                 atolye = iz.db.execute(
                     "SELECT deger FROM ustbilgi WHERE anahtar = 'atolye'"
                 ).fetchone()[0]
-                self.assertEqual(atolye, "Ergin Android Atölyesi")
+                self.assertEqual(atolye, "Ergin İz Atölyesi")
                 satirlar = iz.db.execute(
                     "SELECT ad, sur, derinlik FROM dilimler ORDER BY derinlik"
                 ).fetchall()
