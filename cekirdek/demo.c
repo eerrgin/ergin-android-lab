@@ -1,5 +1,5 @@
 /* © 2026 Ergin Kaplan
- * Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+ * Ergin İz — Ergin İz Atölyesi — Ergin Lab
  */
 
 #include "halka.h"
@@ -8,8 +8,8 @@
 #include <string.h>
 
 int main(void) {
-    printf("Ergin İz halka — Ergin Android Lab\n");
-    printf("Ergin Android Atölyesi · Ergin Kaplan · Ergin Lab\n");
+    printf("Ergin İz halka — Ergin İz\n");
+    printf("Ergin İz Atölyesi · Ergin Kaplan · Ergin Lab\n");
 
     ErginHalka *halka = ergin_halka_olustur(4096);
     if (!halka) {
