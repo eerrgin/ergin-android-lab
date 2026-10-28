@@ -1,32 +1,25 @@
-# Ergin İz
-
-Ergin Android Lab · Ergin Android Atölyesi
+# Ergin İz — Sistem İzleme Atölyesi
 
 Sahip ve yazar: **Ergin Kaplan**
-Ergin Lab
 
-Ergin İz, Ergin Android Atölyesi için yazılmış bir sistem izleme kaydıdır.
-Üretici, olayı kendi halka tamponuna bırakır.
-Servis, kaynakları, tampon boyunu ve süreyi yönetir.
-Tüketici, kaydı SQL ile okur: dilim, sayaç, zamanlama, işaret.
+Ergin İz, olay üretimi, sınırlı halka tamponu, servis, yerel kayıt dosyası ve SQL tüketicisini gösteren bağımsız bir eğitim prototipidir.
 
-Bu depodaki kod Ergin Kaplan'a aittir. Üçüncü taraf izleme ağacı yoktur.
-Ayrıntı: [BELIRT.md](BELIRT.md).
+> **Teknik durum:** Depo adında `android` geçse de mevcut kod Android cihazda çalışan bir uygulama değildir. Kod tabanı Python 3.10 ve C örneklerinden oluşur; mevcut ağaçta Android Gradle projesi, `AndroidManifest.xml`, Kotlin/Java uygulama ekranları veya Android SDK entegrasyonu bulunmaz. Prototip yerel ana makinede çalışır.
 
-## Düzen
+## Bileşenler
 
 ```
-ergin_iz/     Ergin Lab Python kaydı
-cekirdek/     Ergin Lab C halka örneği
-ornekler/     yapılandırma ve SQL
-belgeler/     mimari, veri düzlemi, kullanım, servis sınırı
-araclar/      deneme ve derleme
-tests/        Ergin Android Atölyesi sınamaları
+ergin_iz/     Python tabanlı kayıt ve rapor katmanı
+cekirdek/     C halka tamponu örneği
+ornekler/     yapılandırma, örnek rapor ve SQL
+belgeler/     mimari, veri akışı, güvenlik ve lisans notları
+araclar/      yerel deneme ve derleme komutları
+tests/        birim testleri
 ```
 
 ## Çalıştırma
 
-```bash
+```sh
 python3 -m ergin_iz kaydet -c ornekler/atolye.config -o cikti/atolye.eiz
 python3 -m ergin_iz rapor -i cikti/atolye.eiz
 python3 -m ergin_iz sorgula -i cikti/atolye.eiz -s ornekler/sorgular.sql
@@ -34,27 +27,14 @@ sh araclar/dene.sh
 sh araclar/derle.sh
 ```
 
-Ek paket yok. Python 3.10 ve bir C derleyicisi yeter.
+Python 3.10 ve bir C derleyicisi yeterlidir. Önce [kullanım rehberini](belgeler/kullanim.md) okuyun.
 
-Kayıt açılınca `denetim_port=` satırı basılır. Kanal yalnızca bu makineden,
-`DURUM`, `KAYNAKLAR`, `YAZAR` ve `DUR` komutlarını alır.
+## Güvenlik sınırı
 
-## Ne ölçer
+Denetim kanalı tasarım gereği yerel döngü adresinde çalışır ve sınırlı bir komut kümesini kabul eder. Dosya yolları/sorgular kabuğa aktarılmamalı, kayıt içeriği kullanıcı seçimi dışında ağ üzerinden paylaşılmamalıdır. Bu notlar tasarımın niyetini açıklar; kodu ayrıca incelemek gerekir.
 
-- İç içe dilim: `ergin.lab.cerceve`, `ergin.lab.olcum`
-- İşlemci oranı (`cpu.oran_10000`, 10000 = tam) ve boş bellek
-- Bağlam değişimi artışı
-- Ergin Lab nabız işareti
+## Lisans ve marka
 
-## Belgeler
+Bu bağımsız depoda Google LLC veya Open Handset Alliance kaynak kodu bulunduğu iddia edilmez. Mevcut ağaç bir Android SDK uygulaması değildir. “Android” yalnızca ilgili teknik platformu betimleyen bağlamda kullanılır; Android adı/logosu/Google Play varlıkları bu projeye ait değildir. Ayrıntı: [lisans ve marka notları](belgeler/lisans-ve-marka.md).
 
-- [Mimari](belgeler/mimari.md)
-- [Veri düzlemi](belgeler/veri_duzlemi.md)
-- [Kullanım](belgeler/kullanim.md)
-- [Servis sınırı](belgeler/guvenlik.md)
-
-## Telif
-
-© 2026 Ergin Kaplan. Ergin Android Lab. Ergin Android Atölyesi. Ergin Lab.
-Tüm hakları saklıdır. Dosya başlıklarındaki adlar silinemez.
-Başkasının kendi çalışması gibi yayınlaması yasaktır.
+Bu depodaki özgün kaynaklar için [BELIRT.md](BELIRT.md) geçerlidir. Açık kaynak yeniden kullanım lisansı verilmemiştir; GitHub'da herkese açık olmak kodu yeniden dağıtma izni anlamına gelmez.
