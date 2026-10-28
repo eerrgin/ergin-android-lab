@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab SQL iz işlemcisi. Dilim, sayaç ve zamanlama tabloları."""
 
@@ -21,7 +21,7 @@ from ergin_iz.cerceve import (
 
 
 class SorguHatasi(ValueError):
-    """Ergin Android Atölyesi sorgu hatası."""
+    """Ergin İz Atölyesi sorgu hatası."""
 
 
 def sql_ayir(metin: str) -> list[str]:
