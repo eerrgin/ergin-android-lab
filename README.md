@@ -4,7 +4,7 @@ Sahip ve yazar: **Ergin Kaplan**
 
 Ergin İz, olay üretimi, sınırlı halka tamponu, servis, yerel kayıt dosyası ve SQL tüketicisini gösteren bağımsız bir eğitim prototipidir.
 
-> **Teknik durum:** Depo adında `android` geçse de mevcut kod Android cihazda çalışan bir uygulama değildir. Kod tabanı Python 3.10 ve C örneklerinden oluşur; mevcut ağaçta Android Gradle projesi, `AndroidManifest.xml`, Kotlin/Java uygulama ekranları veya Android SDK entegrasyonu bulunmaz. Prototip yerel ana makinede çalışır.
+> **Teknik durum:** Depo adında `android` geçse de mevcut kod Android™ cihazda çalışan bir uygulama değildir. Kod tabanı Python 3.10 ve C örneklerinden oluşur; mevcut ağaçta Android Gradle projesi, `AndroidManifest.xml`, Kotlin/Java uygulama ekranları veya Android SDK entegrasyonu bulunmaz. Prototip yerel ana makinede çalışır.
 
 ## Bileşenler
 
