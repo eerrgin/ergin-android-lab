@@ -1,5 +1,5 @@
--- Ergin Android Lab — Ergin Kaplan
--- Ergin Lab sorgu defteri. Ergin Android Atölyesi.
+-- Ergin İz — Ergin Kaplan
+-- Ergin Lab sorgu defteri. Ergin İz Atölyesi.
 -- dilimler: süre ölçümü
 -- sayaclar: sayaç
 -- zamanlama: bağlam değişimi
