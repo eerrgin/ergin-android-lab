@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab paylaşımlı düzen: tek halkada bayt tamponu.
 
@@ -16,7 +16,7 @@ import threading
 
 
 class HalkaHatasi(ValueError):
-    """Ergin Android Atölyesi halka hatası."""
+    """Ergin İz Atölyesi halka hatası."""
 
 
 class HalkaTampon:
