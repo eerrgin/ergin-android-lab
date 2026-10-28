@@ -1,0 +1,49 @@
+Ergin İz raporu
+Ergin Android Lab
+Ergin Android Atölyesi · Ergin Kaplan · Ergin Lab
+
+Üst bilgi
+  atolye: Ergin Android Atölyesi
+  dosya: cikti/atolye.eiz
+  dusen: 0
+  lab: Ergin Lab
+  marka: Ergin Android Lab
+  olusturma_ns: 1793189093519696048
+  paket: 87
+  surum: 1.0.0
+  tampon: 524288
+  uretici: 4
+  urun: Ergin İz
+  yazar: Ergin Kaplan
+
+Sayımlar
+  olay: 87
+  dilim: 16
+  sayaç: 30
+  zamanlama: 15
+  işaret: 10
+  açık dilim: 0
+
+En uzun dilimler
+  0.354 ms  d=0  Ergin Lab  ergin.lab.cerceve
+  0.351 ms  d=0  Ergin Lab  ergin.lab.cerceve
+  0.342 ms  d=0  Ergin Lab  ergin.lab.cerceve
+  0.331 ms  d=1  Ergin Android Lab  ergin.lab.olcum
+  0.331 ms  d=1  Ergin Android Lab  ergin.lab.olcum
+  0.315 ms  d=1  Ergin Android Lab  ergin.lab.olcum
+  0.292 ms  d=0  Ergin Lab  ergin.lab.cerceve
+  0.280 ms  d=0  Ergin Lab  ergin.lab.cerceve
+
+Dilim özeti
+  ergin.lab.cerceve  adet=8  ortalama=0.303 ms  en_uzun=0.354 ms
+  ergin.lab.olcum  adet=8  ortalama=0.276 ms  en_uzun=0.331 ms
+
+Sayaçlar
+  bellek.musait_kb  adet=15  min=3669960  max=3677860
+  cpu.oran_10000  adet=15  min=0  max=3500
+
+Zamanlama
+  baglam.degisim  adet=15  en_büyük_artış=115
+
+Ergin Android Lab raporu bitti.
+Ergin Kaplan — Ergin Lab — Ergin Android Atölyesi

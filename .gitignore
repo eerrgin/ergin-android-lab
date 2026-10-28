@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+cikti/
+*.eiz
+cekirdek/ergin_halka_demo
+cekirdek/*.o
