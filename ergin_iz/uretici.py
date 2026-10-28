@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab üreticisi. Olayı kendi halka tamponuna yazar."""
 
@@ -13,7 +13,7 @@ from ergin_iz.halka import HalkaTampon
 
 
 class Uretici:
-    """Ergin Android Atölyesi üretici süreci (bu çalışmada iş parçacığı)."""
+    """Ergin İz Atölyesi üretici süreci (bu çalışmada iş parçacığı)."""
 
     def __init__(self, ad: str, halka: HalkaTampon, izlek: int):
         self.ad = ad
