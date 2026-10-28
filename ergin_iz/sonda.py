@@ -1,12 +1,12 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab veri kaynakları.
 
 Dilim ölçümü görev koşucusunda çalışır.
 Sayaç, zamanlama ve işaret kendi iş parçacığından halkaya yazılır.
 Çekirdek sinyali olarak /proc/stat ve /proc/meminfo okunur; sarmalayıcı
-Ergin Android Atölyesi kodudur.
+Ergin İz Atölyesi kodudur.
 """
 
 from __future__ import annotations
@@ -78,13 +78,13 @@ def calistir_dilim(
             dis = yeni_cerez()
             uretici.yayinla(dilim_bas("ergin.lab.cerceve", "Ergin Lab", dis))
             ic = yeni_cerez()
-            uretici.yayinla(dilim_bas("ergin.lab.olcum", "Ergin Android Lab", ic))
+            uretici.yayinla(dilim_bas("ergin.lab.olcum", "Ergin İz", ic))
             toplam = 0
             for k in range(8000):
                 toplam += k
             if toplam < 0:
                 uretici.yayinla(isaret("ergin.lab.sapma", "Ergin Lab"))
-            uretici.yayinla(dilim_bit("ergin.lab.olcum", "Ergin Android Lab", ic))
+            uretici.yayinla(dilim_bit("ergin.lab.olcum", "Ergin İz", ic))
             uretici.yayinla(dilim_bit("ergin.lab.cerceve", "Ergin Lab", dis))
 
         kosucu.ekle(parca)
@@ -98,7 +98,7 @@ def calistir_sayac(
     ayar: dict,
     kosucu: ErginGorevKosucu,
 ) -> None:
-    kosucu.ekle(lambda: uretici.yayinla(isaret("ergin.lab.sayac.basladi", "Ergin Android Lab")))
+    kosucu.ekle(lambda: uretici.yayinla(isaret("ergin.lab.sayac.basladi", "Ergin İz")))
     once = oku_cpu_jiffy()
     aralik = int(ayar["sayac.aralik_ms"]) / 1000.0
     while not dur.is_set():
@@ -112,7 +112,7 @@ def calistir_sayac(
             once = sonra
         bellek = oku_bellek_kb()
         if bellek is not None:
-            uretici.yayinla(sayac("bellek.musait_kb", "Ergin Android Atölyesi", bellek))
+            uretici.yayinla(sayac("bellek.musait_kb", "Ergin İz Atölyesi", bellek))
 
 
 def calistir_zamanlayici(
@@ -135,7 +135,7 @@ def calistir_zamanlayici(
         uretici.yayinla(
             zamanlama(
                 "baglam.degisim",
-                "Ergin Android Lab",
+                "Ergin İz",
                 onceki=once,
                 sonraki=sonra,
             )
@@ -152,7 +152,7 @@ def calistir_isaret(
     del kosucu
     aralik = int(ayar["isaret.aralik_ms"]) / 1000.0
     while not dur.is_set():
-        uretici.yayinla(isaret("ergin.lab.kalp", "Ergin Android Atölyesi"))
+        uretici.yayinla(isaret("ergin.lab.kalp", "Ergin İz Atölyesi"))
         if dur.wait(aralik):
             return
 
