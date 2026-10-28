@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 import struct
 import tempfile
@@ -31,9 +31,9 @@ class CerceveTest(unittest.TestCase):
     def test_olay_turleri(self):
         ornekler = [
             dilim_bas("ergin.lab.cerceve", "Ergin Lab", 7),
-            sayac("bellek.musait_kb", "Ergin Android Atölyesi", 123456),
-            zamanlama("baglam.degisim", "Ergin Android Lab", 10, 40),
-            isaret("ergin.lab.kalp", "Ergin Android Atölyesi"),
+            sayac("bellek.musait_kb", "Ergin İz Atölyesi", 123456),
+            zamanlama("baglam.degisim", "Ergin İz", 10, 40),
+            isaret("ergin.lab.kalp", "Ergin İz Atölyesi"),
         ]
         ornekler[0].ts = 99
         ornekler[0].pid = 5
