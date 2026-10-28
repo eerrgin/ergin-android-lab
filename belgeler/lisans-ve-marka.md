@@ -4,7 +4,7 @@ Bu belge hukuki görüş değildir; projenin mevcut kapsamını ve kaynak ekleme
 
 ## Mevcut içerik
 - Mevcut ağaç Python ve C kaynaklarından oluşan yerel izleme/kayıt prototipidir.
-- Mevcut ağaçta Android Gradle projesi, AndroidManifest.xml, Kotlin/Java uygulama katmanı veya Android SDK bağımlılığı bulunmaz.
+- Mevcut ağaçta Android™ uygulaması/Gradle projesi, AndroidManifest.xml, Kotlin/Java uygulama katmanı veya Android SDK bağımlılığı bulunmaz.
 - Bu depo Google LLC, Open Handset Alliance veya Android ekibi tarafından desteklenmez ve onlarla bağlantılı değildir.
 - Depoya Google/AOSP kaynak kodu, Google Play Services bileşeni, Android logosu veya Google'a ait marka görseli eklenmiş olduğu iddia edilmez.
 
