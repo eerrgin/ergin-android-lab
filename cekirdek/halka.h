@@ -1,5 +1,5 @@
 /* © 2026 Ergin Kaplan
- * Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+ * Ergin İz — Ergin İz Atölyesi — Ergin Lab
  *
  * Tek üretici, tek tüketici halka tamponu.
  * Sayaçlar stdatomic serbest bırakma / edinme sırası kullanır.
