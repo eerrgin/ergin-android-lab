@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin İz ikili çerçevesi. Ergin Lab veri düzlemi.
 
@@ -42,7 +42,7 @@ _cerez = 0
 
 
 class CerceveHatasi(ValueError):
-    """Ergin Android Lab çerçeve hatası."""
+    """Ergin İz çerçeve hatası."""
 
 
 @dataclass
