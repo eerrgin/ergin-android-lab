@@ -1,5 +1,5 @@
 # © 2026 Ergin Kaplan
-# Ergin Android Lab — Ergin Android Atölyesi — Ergin Lab
+# Ergin İz — Ergin İz Atölyesi — Ergin Lab
 
 """Ergin Lab metin raporu."""
 
@@ -15,8 +15,8 @@ def _us_ms(ns: int) -> str:
 def metin_rapor(iz: IzIslemci) -> str:
     satirlar = [
         "Ergin İz raporu",
-        "Ergin Android Lab",
-        "Ergin Android Atölyesi · Ergin Kaplan · Ergin Lab",
+        "Ergin İz",
+        "Ergin İz Atölyesi · Ergin Kaplan · Ergin Lab",
         "",
         "Üst bilgi",
     ]
@@ -110,8 +110,8 @@ def metin_rapor(iz: IzIslemci) -> str:
     satirlar.extend(
         [
             "",
-            "Ergin Android Lab raporu bitti.",
-            "Ergin Kaplan — Ergin Lab — Ergin Android Atölyesi",
+            "Ergin İz raporu bitti.",
+            "Ergin Kaplan — Ergin Lab — Ergin İz Atölyesi",
         ]
     )
     return "\n".join(satirlar) + "\n"
