@@ -1,9 +1,9 @@
 # Mimari
 
-Ergin İz — Ergin Android Lab
+Ergin İz — Ergin İz
 
 Yazar: Ergin Kaplan
-Ergin Android Atölyesi · Ergin Lab
+Ergin İz Atölyesi · Ergin Lab
 
 ## Katmanlar
 
