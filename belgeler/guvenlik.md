@@ -3,7 +3,7 @@
 Ergin İz — yerel sistem izleme prototipi
 
 ## Teknik kapsam
-Bu depo mevcut hâliyle Android cihaz uygulaması değildir. Python/C katmanları yerel bir ana makinede çalışan eğitim prototipidir. Android SDK, Android arka plan servisi veya Google SDK entegrasyonu bulunduğu varsayılmamalıdır.
+Bu depo mevcut hâliyle Android™ cihaz uygulaması değildir. Python/C katmanları yerel bir ana makinede çalışan eğitim prototipidir. Android SDK, Android arka plan servisi veya Google SDK entegrasyonu bulunduğu varsayılmamalıdır.
 
 ## Denetim kanalı
 Denetim kanalı yalnızca `127.0.0.1` üzerinde, işletim sisteminin seçtiği bir kapıda dinler. Dış arayüze bağlanmaz. Çerçeve boyu en fazla 4096 bayttır. Bilinen komutlar: `DURUM`, `KAYNAKLAR`, `YAZAR`, `DUR`; diğer komutlar reddedilir.
